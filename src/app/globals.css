@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Syne:wght@400..800&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -39,4 +42,75 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.navlink{
+  font-family:  "Montserrat", sans-serif !important;
+  color: #343F56 !important;
+  text-decoration: none !important;
+}
+
+.pchide{
+  display: none !important; 
+}
+
+.hero{
+  height: 600px;
+}
+
+.heroHeading{
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .phoneHide{
+    display: none;
+  }
+  .pchide{
+    display: block !important;
+  }
+  .hero{
+    height: 50vh;
+    padding-inline: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .heroHeading{
+    width: 100%;
+  }
+}
+
+.mainHeading{
+  font-family: "Syne";
+  font-size: 38px ;
+  color: #343F56 !important;
+}
+
+.subHeading{
+  font-family: "Montserrat", sans-serif !important;
+  color: #343F56 !important;
+}
+
+.inputLabel{
+  font-family: "Montserrat", sans-serif !important;
+  font-size: medium;
+
+}
+
+input{
+  border: none ;
+  background-color: #F1F1F1 !important;
+  width: 100%;
+  padding: 3%;
+  font-family: "Montserrat light", sans-serif !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #989898;
+  opacity: 1; /* Ensures full color visibility across browsers */
+}
+
+/* Optional: To handle Safari, use this */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #989898;
 }
