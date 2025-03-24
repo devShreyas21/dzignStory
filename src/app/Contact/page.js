@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 
-export default function page() {
+export default function Page() {
 
     const [selectedService, setSelectedService] = useState('Logo Design projects is ₹ 25,000');
     const [statusMessage, setStatusMessage] = useState('');
