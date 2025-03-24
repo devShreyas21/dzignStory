@@ -57,7 +57,7 @@ export default function Page() {
         setIsLoading(true); // Show loading overlay
 
         try {
-            const response = await fetch('http://localhost:3000/api/SendEmail', {
+            const response = await fetch('/api/SendEmail', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data),
