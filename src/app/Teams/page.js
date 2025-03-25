@@ -68,7 +68,7 @@ export default function page() {
           <div className="col-md-2 col-4 text-center my-4 d-flex justify-content-center" >
             <div style={{ width: "125px", height: "125px", backgroundColor: "#ffffff", display: "flex", justifyContent: "center", alignItems: "center" }}>
 
-              <img src='/images/technologies/wordpress.png'  style={{width:"100%"}} />
+              <img src='/images/technologies/WordPress.png'  style={{width:"100%"}} />
             </div>
 
           </div>
