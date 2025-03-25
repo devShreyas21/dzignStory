@@ -77,7 +77,40 @@ a {
 .pcnone{
   display: none !important;
 }
+
+.service{
+  display: flex !important;
+  justify-content: space-evenly !important;
+  
+}
+.mobileOnly{
+  display: none !important;
+}
+.pconly{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  
+}
 @media only screen and (max-width: 600px) {
+  .pconly{
+    display: none !important;
+  }
+  .center{
+    text-align: center !important;
+  }
+
+  .margin{
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+
+  .mobileOnly{
+    display: block !important;
+  }
+  .service{
+    display: none !important;
+  }
   .pcnone{
     display: block !important;
   }
@@ -196,4 +229,16 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   to {
     transform: translateX(0); /* Scroll to the right */
   }
+}
+
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  max-height: 300px; 
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: contain;
 }

@@ -9,7 +9,9 @@ export default function Footer() {
         <div className="container">
             <div className="row d-flex justify-content-center align-items-center  py-4">
                 <div className="col-md-4 col-12 text-center">
+                    <Link href="/">
                     <img src="/images/dzignstorylogofooter.png" style={{width:"50%"}} alt="" />
+                    </Link>
                 </div>
                 <div className="col-md-4 col-12 text-center my-4">
                     <div>

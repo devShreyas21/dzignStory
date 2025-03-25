@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Link from "next/link";
@@ -9,11 +9,42 @@ import Image from "next/image";
 
 export default function Page() {
 
+  const images = [
+    '/images/lnt.png',
+    '/images/CLIENTS-22.png',
+    '/images/CLIENTS-21.png',
+    '/images/CLIENTS-19.png',
+    '/images/CLIENTS-17.png',
+    '/images/CLIENTS-18.png',
+    '/images/CLIENTS-24.png',
+    '/images/CLIENTS-25.png',
+    '/images/i-mates-logo 1.png',
+    '/images/CLIENTS-27.png',
+    '/images/CLIENTS-26.png',
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
   const logos = Array.from({ length: 16 }, (_, i) => `/images/slider2/Untitled-${i + 1}.png`);
   const logos2 = Array.from({ length: 15 }, (_, i) => `/images/slider1/Untitled-${i + 1}.png`);
 
   useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.js");
+    require("bootstrap/dist/js/bootstrap.bundle");
   }, []);
 
   return (
@@ -44,12 +75,12 @@ export default function Page() {
           </div>
 
           <div className="my-5">
-            <div className="row g-3 d-flex justify-content-evenly"> {/* Bootstrap gap utility for spacing */}
+            <div className="row g-3 service"> {/* Bootstrap gap utility for spacing */}
 
               {/* Service Card 1 */}
-              <div className="col-md-5">
+              <div className="col-md-5 col-12">
                 <div className="card d-flex flex-row align-items-center border-0">
-                  <div className="card-body ms-4" >
+                  <div className="card-body ms-3" >
                     <h3 className="card-title subHeading">Branding & Advertising</h3>
                     <p className="card-text subHeading">
                       Crafting bold identities that captivate and connect.
@@ -60,9 +91,9 @@ export default function Page() {
               </div>
 
               {/* Service Card 2 */}
-              <div className="col-md-5">
+              <div className="col-md-5 col-12">
                 <div className="card d-flex flex-row align-items-center border-0">
-                  <div className="card-body ms-4">
+                  <div className="card-body ms-3">
                     <h3 className="card-title subHeading">Website & SEO</h3>
                     <p className="card-text subHeading">
                       Optimized websites that rank, engage, and convert.
@@ -73,9 +104,9 @@ export default function Page() {
               </div>
 
               {/* Service Card 5 */}
-              <div className="col-md-5">
+              <div className="col-md-5 col-12">
                 <div className="card d-flex flex-row align-items-center border-0">
-                  <div className="card-body ms-4">
+                  <div className="card-body ms-3">
                     <h3 className="card-title subHeading">Social media &
                       Strategies</h3>
                     <p className="card-text subHeading">
@@ -90,9 +121,9 @@ export default function Page() {
 
 
               {/* Service Card 4 */}
-              <div className="col-md-5">
+              <div className="col-md-5 col-12">
                 <div className="card d-flex flex-row align-items-center border-0">
-                  <div className="card-body ms-4">
+                  <div className="card-body ms-3">
                     <h3 className="card-title subHeading">Product Photography</h3>
                     <p className="card-text subHeading">
                       Showcasing products with precision and creativity.
@@ -103,9 +134,9 @@ export default function Page() {
               </div>
 
               {/* Service Card 5 */}
-              <div className="col-md-5">
+              <div className="col-md-5 col-12">
                 <div className="card d-flex flex-row align-items-center border-0">
-                  <div className="card-body ms-4">
+                  <div className="card-body ms-3">
                     <h3 className="card-title subHeading">Packaging Design</h3>
                     <p className="card-text subHeading">
                       Designing experiences that impress instantly.
@@ -116,9 +147,9 @@ export default function Page() {
               </div>
 
               {/* Service Card 3 */}
-              <div className="col-md-5">
+              <div className="col-md-5 col-12">
                 <div className="card d-flex flex-row align-items-center border-0">
-                  <div className="card-body ms-4">
+                  <div className="card-body ms-3">
                     <h3 className="card-title subHeading">Video Production</h3>
                     <p className="card-text subHeading">
                       Visual storytelling that leaves a lasting impact.
@@ -128,6 +159,73 @@ export default function Page() {
                 </div>
               </div>
 
+            </div>
+            <div className="row mobileOnly ">
+              <div className="col-12 d-flex justify-content-center align-items-center">
+                <div className="card border-0" style={{ width: "18rem" }}>
+                  <img src="/images/photo-1.jpeg" className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title subHeading">Branding & Advertising</h5>
+                    <p className="card-text subHeading">Crafting bold identities that captivate and connect.</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-12 d-flex justify-content-center align-items-center mt-4">
+                <div className="card border-0" style={{ width: "18rem" }}>
+                  <img src="/images/photo-3.jpeg" className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title subHeading">Website & SEO</h5>
+                    <p className="card-text subHeading">Optimized websites that rank, engage, and convert.</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-12 d-flex justify-content-center align-items-center mt-4">
+                <div className="card border-0" style={{ width: "18rem" }}>
+                  <img src="/images/photo-2.jpeg" className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title subHeading">Social media & Strategies</h5>
+                    <p className="card-text subHeading">Helping you build strong presence across platforms</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-12 d-flex justify-content-center align-items-center mt-4">
+                <div className="card border-0" style={{ width: "18rem" }}>
+                  <img src="/images/photo-4.jpeg" className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title subHeading">Product Photography</h5>
+                    <p className="card-text subHeading">Showcasing products with precision and creativity.</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-12 d-flex justify-content-center align-items-center mt-4">
+                <div className="card border-0" style={{ width: "18rem" }}>
+                  <img src="/images/photo-2.jpeg" className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title subHeading">Packaging Design</h5>
+                    <p className="card-text subHeading">Designing experiences that impress instantly.</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-12 d-flex justify-content-center align-items-center mt-4">
+                <div className="card border-0" style={{ width: "18rem" }}>
+                  <img src="/images/photo-5.jpeg" className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title subHeading">Video Production</h5>
+                    <p className="card-text subHeading">Visual storytelling that leaves a lasting impact.</p>
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -148,7 +246,7 @@ export default function Page() {
 
 
           <div className="row my-5  d-flex justify-content-center align-items-center">
-            <div className="col-md-6">
+            <div className="col-md-6 margin">
               <div>
                 <h3 className="subHeading">About Us</h3>
                 <h2 className="mainHeading">Your Vision, Our Creative Execution</h2>
@@ -156,7 +254,7 @@ export default function Page() {
               <p className="subHeading">At Dzign Story, we are a young team by brain and mature by heart—blending fresh ideas with deep understanding to craft impactful digital solutions. We don’t just design; we decode your pain points and transform them into seamless, result-driven strategies that make your digital path clear.</p>
               <p className="subHeading">Since 2018, we’ve been helping medium and large enterprises elevate their brand presence with passion, creativity, and innovation. Whether it’s branding, website development, or SEO, we bring stories to life through design and strategy—turning visions into success. <br />Let’s create something extraordinary together!</p>
 
-              <div>
+              <div className="center">
                 <Link href="/Contact">
                   <button className="btn subHeading" style={{ backgroundColor: '#FED112', borderRadius: '5px', fontFamily: 'Montserrat, sans-serif' }}>More Curious ?</button>
                 </Link>
@@ -183,7 +281,7 @@ export default function Page() {
             <h2 className="mainHeading text-center">Brands We’ve Empowered, Stories We’ve Created</h2>
           </div>
 
-          <div className="row d-flex justify-content-center align-items-center my-5">
+          <div className="row my-5 ">
             <div className="col-md-3 text-center">
               <img style={{ width: "70%" }} src="/images/lnt.png" alt="" />
             </div>
@@ -295,14 +393,14 @@ export default function Page() {
       {/* Testimonials */}
       <div className="d-flex flex-column align-item-center justify-content-center py-5" style={{ backgroundColor: '#F6FCFF' }}>
         <div className="container ">
-          <div>
+          <div className="margin">
             <h3 className="subHeading">Testimonials</h3>
             <h2 className="mainHeading">We care about our customer experiences</h2>
           </div>
 
           <div className="container">
             <div className="row my-5">
-              <div className="col-md-6 col-12">
+              <div className="col-md-6 col-12 my-2">
                 <div className="card" style={{ backgroundColor: "#FFFFFF", padding: "5%", border: "none" }}>
                   <div className="subHeading">At Dzign Story, we are a young team by brain and mature by heart—blending fresh ideas with deep understanding to craft impactful digital solutions. We don’t just design; we decode your pain points and transform them into seamless, result-driven strategies that make your digital path clear.</div>
 
@@ -317,7 +415,7 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-12">
+              <div className="col-md-6 col-12 my-2">
                 <div className="card" style={{ backgroundColor: "#FFFFFF", padding: "5%", border: "none" }}>
                   <div className="subHeading">At Dzign Story, we are a young team by brain and mature by heart—blending fresh ideas with deep understanding to craft impactful digital solutions. We don’t just design; we decode your pain points and transform them into seamless, result-driven strategies that make your digital path clear.</div>
 
