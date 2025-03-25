@@ -55,21 +55,44 @@ a {
 }
 
 .hero{
-  height: 600px;
+  background-image: url('/images/dzignStoryHeroGraphic.png');
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.innerHero{
+  height: 75vh;
 }
 
 .heroHeading{
   width: 50%;
 }
 
+.d-flex-mobile{
+  display: flex;
+  justify-content: center !important;
+}
+.pcnone{
+  display: none !important;
+}
 @media only screen and (max-width: 600px) {
+  .pcnone{
+    display: block !important;
+  }
+  .d-flex-mobile{
+    display: flex;
+    justify-content: left !important;
+    margin-bottom: 2px;
+  }
   .phoneHide{
     display: none;
   }
   .pchide{
     display: block !important;
   }
-  .hero{
+  .innerHero{
     height: 50vh;
     padding-inline: 2%;
     margin-top: 5%;
@@ -77,6 +100,10 @@ a {
   }
   .heroHeading{
     width: 100%;
+  }
+  .hero{
+    background-image: none;
+    height: 70vh;
   }
 }
 
@@ -113,4 +140,60 @@ input::placeholder, textarea::placeholder {
 /* Optional: To handle Safari, use this */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #989898;
+}
+
+
+.slider-container {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  animation: scroll 600s linear infinite;
+}
+
+.slide {
+  flex: 0 0 auto;
+  margin: 0 10px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slider-container2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.slider-track2 {
+  display: flex;
+  animation: scroll2 600s linear infinite;
+  transform: translateX(0);
+}
+
+.slide2 {
+  flex: 0 0 auto;
+  margin: 0 10px;
+}
+
+@keyframes scroll2 {
+  from {
+    transform: translateX(-100%); /* Start from the last image */
+  }
+  to {
+    transform: translateX(0); /* Scroll to the right */
+  }
 }

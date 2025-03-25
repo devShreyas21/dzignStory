@@ -8,6 +8,7 @@ import Footer from "./Component/Footer";
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +27,8 @@ const geistMono = Geist_Mono({
 
 export default function RootLayout({ children }) {
 
+  const pathname = usePathname();
+
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap")
   }, [])
@@ -33,7 +36,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Navbar />
+      {pathname !== "/" && <Navbar />}
         {children}
         <Footer />
       </body>

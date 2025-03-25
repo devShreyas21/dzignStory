@@ -13,7 +13,7 @@ export default function Navbar() {
                     </div>
                     <div className='col-md-2 text-center '><Link href="/Teams"className='navlink'>Team</Link></div>
                     <div className='col-md-4 text-center '><Link href="/"><img src="/images/dzign-story-logo.png" alt="" style={{ width: "70%" }} /></Link></div>
-                    <div className='col-md-2 text-center '><Link href="#services"className='navlink'>Service</Link></div>
+                    <div className='col-md-2 text-center '><Link href="/#services"className='navlink'>Service</Link></div>
                     <div className='col-md-2 text-center '><Link href="/Contact"className='navlink'>Contact</Link></div>
                 </div>
             </div>
@@ -36,10 +36,10 @@ export default function Navbar() {
                                 <Link className="nav-link navlink active" aria-current="page" href="/Projects">Projects</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link navlink active" aria-current="page" href="/">Team</Link>
+                                <Link className="nav-link navlink active" aria-current="page" href="/Teams">Team</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link navlink active" aria-current="page" href="#services">Services</Link>
+                                <Link className="nav-link navlink active" aria-current="page" href="/#services">Services</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link navlink active" aria-current="page" href="/Contact">Contact</Link>

@@ -101,7 +101,7 @@ export default function Page() {
             )}
 
             <div className="container">
-                <div className="row d-flex justify-content-center align-items-center">
+                <div className="row d-flex justify-content-between align-items-top">
                     <div className="col-md-8 col-12 my-5 py-5" style={{ backgroundColor: "#FFFFFF", padding: "3%" }}>
                         <div>
                             <div className='mainHeading mb-4'>Your Brand’s Next Chapter Begins Here
@@ -174,10 +174,10 @@ export default function Page() {
                     </div>
 
                     <div className="col-md-4 col-12 my-5">
-                        <div>
-
+                        <div className='text-center'>
+                            <img src="/images/contactUs.jpeg" alt="" style={{ width: "100%" }} />
                         </div>
-                        <div className='ms-4'>
+                        <div className='ms-5 mt-4'>
                             <div className='mainHeading mb-4' style={{ lineHeight: "40px" }}>Your Brand’s<br />
                                 Story Starts Now!</div>
                             <div className='subHeading'>Let’s make something extraordinary together!<br /> Share your details, and we’ll be in touch soon.
