@@ -1,13 +1,14 @@
 'use client'
-import Link from 'next/link'
 import React from 'react'
+import Link from 'next/link'
+
 
 export default function page() {
   return (
     <div className='container'>
-      <img src="/images/fullpages/Mirai.jpg" style={{ width: "100%" }} alt="" />
+      <img src="/images/fullpages/mulyam.jpg" style={{ width: "100%" }} alt="" />
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <Link href="/Groza" style={{ textDecoration: "none", color: "#424C61" }}>
+        <Link href="/Gummies" style={{ textDecoration: "none", color: "#424C61" }}>
           <div>
             <i className="bi bi-arrow-left" style={{ fontSize: "30px" }}></i>
           </div>
@@ -17,7 +18,7 @@ export default function page() {
             <p className="subHeading" style={{ fontSize: "20px" }}>Projects</p>
           </div>
         </Link>
-        <Link href="/Gummies" style={{ textDecoration: "none", color: "#424C61" }}>
+        <Link href="/Mirai" style={{ textDecoration: "none", color: "#424C61" }}>
           <div>
             <i className="bi bi-arrow-right" style={{ fontSize: "30px" }}></i>
           </div>

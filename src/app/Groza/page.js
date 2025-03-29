@@ -8,7 +8,7 @@ export default function page() {
     <div className='container'>
       <img src="/images/fullpages/Groza.jpg" style={{ width: "100%" }} alt="" />
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <Link href="/" style={{ textDecoration: "none", color: "#424C61" }}>
+        <Link href="/Gummies" style={{ textDecoration: "none", color: "#424C61" }}>
           <div>
             <i className="bi bi-arrow-left" style={{ fontSize: "30px" }}></i>
           </div>
