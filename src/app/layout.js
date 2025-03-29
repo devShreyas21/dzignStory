@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./Component/Navbar";
 import Footer from "./Component/Footer";
 
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
