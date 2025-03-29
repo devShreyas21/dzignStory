@@ -326,7 +326,7 @@ export default function Page() {
               style={{
                 opacity: fade ? 1 : 0,
                 transition: "opacity 0.5s ease-in-out",
-                width:"100%"
+                width: "100%"
               }}
             />
           </div>
@@ -376,26 +376,81 @@ export default function Page() {
 
       </div>
 
-
       <div className="my-5">
 
-        <div className="slider-container">
-          <div className="slider-track">
-            {logos.concat(logos).concat(logos).concat(logos).concat(logos).map((logo, index) => (
-              <div key={index} className="slide">
-                <img src={logo} alt={`Logo ${index % 16 + 1}`} />
-              </div>
-            ))}
+        <div className="marquee-container">
+          <div className="marquee-content">
+
+            <img src="/images/slider1/Untitled-1.png" alt="Image 1" />
+            <img src="/images/slider1/Untitled-2.png" alt="Image 2" />
+            <img src="/images/slider1/Untitled-3.png" alt="Image 3" />
+            <img src="/images/slider1/Untitled-4.png" alt="Image 4" />
+            <img src="/images/slider1/Untitled-5.png" alt="Image 5" />
+            <img src="/images/slider1/Untitled-6.png" alt="Image 6" />
+            <img src="/images/slider1/Untitled-7.png" alt="Image 7" />
+            <img src="/images/slider1/Untitled-8.png" alt="Image 8" />
+            <img src="/images/slider1/Untitled-9.png" alt="Image 9" />
+            <img src="/images/slider1/Untitled-10.png" alt="Image 10" />
+            <img src="/images/slider1/Untitled-11.png" alt="Image 10" />
+            <img src="/images/slider1/Untitled-12.png" alt="Image 10" />
+            <img src="/images/slider1/Untitled-13.png" alt="Image 10" />
+            <img src="/images/slider1/Untitled-14.png" alt="Image 10" />
+            <img src="/images/slider1/Untitled-15.png" alt="Image 10" />
+
+
+            <img src="/images/slider1/Untitled-1.png" alt="Image 1" />
+            <img src="/images/slider1/Untitled-2.png" alt="Image 2" />
+            <img src="/images/slider1/Untitled-3.png" alt="Image 3" />
+            <img src="/images/slider1/Untitled-4.png" alt="Image 4" />
+            <img src="/images/slider1/Untitled-5.png" alt="Image 5" />
+            <img src="/images/slider1/Untitled-6.png" alt="Image 6" />
+            <img src="/images/slider1/Untitled-7.png" alt="Image 7" />
+            <img src="/images/slider1/Untitled-8.png" alt="Image 8" />
+            <img src="/images/slider1/Untitled-9.png" alt="Image 9" />
+            <img src="/images/slider1/Untitled-10.png" alt="Image 10" />
+            <img src="/images/slider1/Untitled-11.png" alt="Image 10" />
+            <img src="/images/slider1/Untitled-12.png" alt="Image 10" />
+            <img src="/images/slider1/Untitled-13.png" alt="Image 10" />
+            <img src="/images/slider1/Untitled-14.png" alt="Image 10" />
+            <img src="/images/slider1/Untitled-15.png" alt="Image 10" />
           </div>
         </div>
 
-        <div className="slider-container2">
-          <div className="slider-track2">
-            {logos2.concat(logos2).concat(logos2).concat(logos2).concat(logos2).reverse().map((logo, index) => (
-              <div key={index} className="slide2">
-                <img src={logo} alt={`Logo ${index % 16 + 1}`} />
-              </div>
-            ))}
+        <div className="marquee-container">
+          <div className="marquee-content-reverse">
+
+            <img src="/images/slider2/Untitled-1.png" alt="Image 1" />
+            <img src="/images/slider2/Untitled-2.png" alt="Image 2" />
+            <img src="/images/slider2/Untitled-3.png" alt="Image 3" />
+            <img src="/images/slider2/Untitled-4.png" alt="Image 4" />
+            <img src="/images/slider2/Untitled-5.png" alt="Image 5" />
+            <img src="/images/slider2/Untitled-6.png" alt="Image 6" />
+            <img src="/images/slider2/Untitled-7.png" alt="Image 7" />
+            <img src="/images/slider2/Untitled-8.png" alt="Image 8" />
+            <img src="/images/slider2/Untitled-9.png" alt="Image 9" />
+            <img src="/images/slider2/Untitled-10.png" alt="Image 10" />
+            <img src="/images/slider2/Untitled-11.png" alt="Image 10" />
+            <img src="/images/slider2/Untitled-12.png" alt="Image 10" />
+            <img src="/images/slider2/Untitled-13.png" alt="Image 10" />
+            <img src="/images/slider2/Untitled-14.png" alt="Image 10" />
+            <img src="/images/slider2/Untitled-15.png" alt="Image 10" />
+
+
+            <img src="/images/slider2/Untitled-1.png" alt="Image 1" />
+            <img src="/images/slider2/Untitled-2.png" alt="Image 2" />
+            <img src="/images/slider2/Untitled-3.png" alt="Image 3" />
+            <img src="/images/slider2/Untitled-4.png" alt="Image 4" />
+            <img src="/images/slider2/Untitled-5.png" alt="Image 5" />
+            <img src="/images/slider2/Untitled-6.png" alt="Image 6" />
+            <img src="/images/slider2/Untitled-7.png" alt="Image 7" />
+            <img src="/images/slider2/Untitled-8.png" alt="Image 8" />
+            <img src="/images/slider2/Untitled-9.png" alt="Image 9" />
+            <img src="/images/slider2/Untitled-10.png" alt="Image 10" />
+            <img src="/images/slider2/Untitled-11.png" alt="Image 10" />
+            <img src="/images/slider2/Untitled-12.png" alt="Image 10" />
+            <img src="/images/slider2/Untitled-13.png" alt="Image 10" />
+            <img src="/images/slider2/Untitled-14.png" alt="Image 10" />
+            <img src="/images/slider2/Untitled-15.png" alt="Image 10" />
           </div>
         </div>
 

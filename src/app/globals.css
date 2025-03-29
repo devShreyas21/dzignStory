@@ -242,3 +242,59 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   height: 100%;
   object-fit: contain;
 }
+
+
+
+/* marquee elements css */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+}
+
+/* Shared Marquee Content */
+.marquee-content {
+  display: flex;
+  flex-shrink: 0;
+  min-width: 200%;
+  animation: scroll-left 100s linear infinite;
+}
+
+.marquee-content-reverse {
+  display: flex;
+  flex-shrink: 0;
+  min-width: 200%;
+  animation: scroll-right 100s linear infinite;
+}
+
+/* Image Styling */
+.marquee-content img, 
+.marquee-content-reverse img {
+  width: 180px;
+  height: 130px;
+  object-fit: contain;
+  flex: none; /* Ensures they stay in line */
+  margin-inline: 10px;
+}
+
+/* Left-to-Right Animation */
+@keyframes scroll-left {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}
+
+/* Right-to-Left Animation */
+@keyframes scroll-right {
+  from {
+      transform: translateX(-30%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
