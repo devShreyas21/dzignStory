@@ -106,6 +106,34 @@ export default function Page() {
             </div>
           </div>
 
+          <div className="col-md-4 col-12 p-3">
+            <div className="ProjectCard" >
+              <img src="images/thumbnail/Skyra.png" style={{ width: "100%" }} alt="" />
+              <div className='container ' style={{ display: "flex", justifyContent: "space-between", alignItems: "top", marginTop: "-18%" }}>
+                <div className='ms-2'>
+                  <p style={{ color: "#ffffff" }}>Brand Identity Design <br />Location - Baner, Pune</p>
+                </div>
+                <div className='text-center ' style={{ marginRight: "25%", marginTop: "1%" }}>
+                  <button style={{ paddingInline: "80%", paddingTop: "15%", paddingBottom: "15%", background: "none", border: "1px solid #ffffff", color: "#ffffff" }} onClick={()=>{router.push('/Skyra')}}>Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-4 col-12 p-3">
+            <div className="ProjectCard" >
+              <img src="images/thumbnail/junglecat.png" style={{ width: "100%" }} alt="" />
+              <div className='container ' style={{ display: "flex", justifyContent: "space-between", alignItems: "top", marginTop: "-18%" }}>
+                <div className='ms-2'>
+                  <p style={{ color: "#ffffff" }}>Brand Identity Design <br />Location - Baner, Pune</p>
+                </div>
+                <div className='text-center ' style={{ marginRight: "25%", marginTop: "1%" }}>
+                  <button style={{ paddingInline: "80%", paddingTop: "15%", paddingBottom: "15%", background: "none", border: "1px solid #ffffff", color: "#ffffff" }} onClick={()=>{router.push('/JungleCat')}}>Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
         </div>
 

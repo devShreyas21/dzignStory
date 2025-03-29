@@ -24,21 +24,19 @@ export default function Page() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [fade, setFade] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setFade(false);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setFade(true);
+      }, 500); // Duration of fade-out before changing image
     }, 3000);
+
     return () => clearInterval(interval);
-  }, [images.length]);
-
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
-
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  }, []);
 
   const logos = Array.from({ length: 16 }, (_, i) => `/images/slider2/Untitled-${i + 1}.png`);
   const logos2 = Array.from({ length: 15 }, (_, i) => `/images/slider1/Untitled-${i + 1}.png`);
@@ -281,7 +279,7 @@ export default function Page() {
             <h2 className="mainHeading text-center">Brands We’ve Empowered, Stories We’ve Created</h2>
           </div>
 
-          <div className="row my-5 ">
+          <div className="row my-5 pconly">
             <div className="col-md-3 text-center">
               <img style={{ width: "70%" }} src="/images/lnt.png" alt="" />
             </div>
@@ -320,6 +318,19 @@ export default function Page() {
             </div>
           </div>
 
+          <div className="text-center mobileOnly">
+            {/* <img src={images[currentIndex]} style={{ width: "100%" }} alt="Slide" /> */}
+            <img
+              src={images[currentIndex]}
+              alt="Slide"
+              style={{
+                opacity: fade ? 1 : 0,
+                transition: "opacity 0.5s ease-in-out",
+                width:"100%"
+              }}
+            />
+          </div>
+
           <div className="d-flex justify-content-center">
             <Link href="/Contact">
               <button className="btn subHeading" style={{ backgroundColor: '#FED112', borderRadius: '5px', fontFamily: 'Montserrat, sans-serif' }}>
@@ -329,6 +340,9 @@ export default function Page() {
           </div>
         </div>
       </div>
+
+
+
 
       {/* Yellow Background  */}
       <div className="d-flex align-item-center justify-content-center" style={{ backgroundColor: '#FED112' }}>

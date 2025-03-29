@@ -33,6 +33,7 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap")
   }, [])
+  
 
   return (
     <html lang="en">
