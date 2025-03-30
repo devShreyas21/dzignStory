@@ -471,30 +471,42 @@ export default function Page() {
             <div className="row my-5">
               <div className="col-md-6 col-12 my-2">
                 <div className="card" style={{ backgroundColor: "#FFFFFF", padding: "5%", border: "none" }}>
-                  <div className="subHeading">At Dzign Story, we are a young team by brain and mature by heart—blending fresh ideas with deep understanding to craft impactful digital solutions. We don’t just design; we decode your pain points and transform them into seamless, result-driven strategies that make your digital path clear.</div>
+                  <div className="subHeading">We have been working with Dzign Story for the past nine years for all our corporate branding and advertising needs. It has been an exceptional experience with this agency.
+
+                    Their unique ability to transform innovative ideas into well-crafted designs, coupled with their impressive on-time project deliveries, truly sets them apart. If you are looking for a highly efficient and expert team to handle your organization&apos;s advertising needs, your search ends here.
+
+                    Working with Dzign Story has been a journey from expectations to delight, and we highly recommend them as a trusted and creative advertising partner.
+
+                    Wishing Dzign Story continued success and a prosperous future ahead!
+                  </div>
 
                   <div className="row mt-5">
                     <div className="col-md-2 d-flex-mobile">
                       <div style={{ width: "50px", height: "50px", backgroundColor: "#EDEDED", borderRadius: "50%" }}></div>
                     </div>
                     <div className="col-md-10">
-                      <div className="subHeading">Client Name</div>
-                      <div className="subHeading">Company</div>
+                      <div className="subHeading">Mohasin Nadaf</div>
+                      <div className="subHeading">Elite School of Professional Accountant</div>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-6 col-12 my-2">
                 <div className="card" style={{ backgroundColor: "#FFFFFF", padding: "5%", border: "none" }}>
-                  <div className="subHeading">At Dzign Story, we are a young team by brain and mature by heart—blending fresh ideas with deep understanding to craft impactful digital solutions. We don’t just design; we decode your pain points and transform them into seamless, result-driven strategies that make your digital path clear.</div>
+                  <div className="subHeading">Very professional and high-quality work! We have been associated with Dzign Story for the past four years for our institutional in-house magazine, and they have consistently met and exceeded our expectations.
+
+                    Their creativity, attention to detail, and commitment to delivering exceptional designs make them a standout agency. The team is highly responsive, ensuring that all our requirements are fulfilled seamlessly.
+
+                    If you are looking for a reliable and skilled creative partner, Dzign Story is the right choice. We highly recommend them for their dedication, expertise, and outstanding service.
+                  </div>
 
                   <div className="row mt-5">
                     <div className="col-md-2 d-flex-mobile">
                       <div style={{ width: "50px", height: "50px", backgroundColor: "#EDEDED", borderRadius: "50%" }}></div>
                     </div>
                     <div className="col-md-10">
-                      <div className="subHeading">Client Name</div>
-                      <div className="subHeading">Company</div>
+                      <div className="subHeading">Dharmendra Trivedi</div>
+                      <div className="subHeading">L&T IPM</div>
                     </div>
                   </div>
                 </div>

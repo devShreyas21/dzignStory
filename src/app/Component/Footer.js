@@ -38,18 +38,46 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="col-md-4 col-12 d-flex-left-Mobile">
-                        <div style={{width:"80%"}}>
-                            <h4>Need Support?</h4>
-                            <div className='my-4'><Link href="mailto:info@dzignstory.com" style={{ color: "#ffffff", textDecoration: "none", fontSize: "20px" }}><i className="bi bi-envelope-fill"></i>&nbsp;&nbsp;info@dzignstory.com</Link></div>
-                            <div className='my-4'><Link href="tele:+917020906388" style={{ color: "#ffffff", textDecoration: "none", fontSize: "20px" }}><i className="bi bi-telephone-fill"></i>&nbsp;&nbsp;+91 7020906388</Link></div>
-                            <div className='my-4' style={{ fontSize: "20px" }}><i className="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;D - 201, Samarth Carina, Near Aditya Birla Hospital, <br />Thergaon-Chinchwad Rd.,<br />Pune - MH - 411033</div>
+                        <div style={{ width: "80%" }}>
+                            <h2>Need Support?</h2>
+                            <div className='my-4'>
+                                <Link href="mailto:info@dzignstory.com" style={{ color: "#ffffff", textDecoration: "none", fontSize: "20px" }}>
+                                    <div className='d-flex justify-content-between align-items-center' style={{ width: "68%" }}>
+                                        <div>
+                                            <i className="bi bi-envelope-fill" style={{fontSize:"25px"}}></i>
+                                        </div>
+                                        <div style={{fontSize:"16px"}}>
+                                            info@dzignstory.com
+                                        </div>
+                                    </div>
+
+                                </Link>
+                            </div>
+
+                            <div className='my-4'>
+                                <Link href="tele:+917020906388" style={{ color: "#ffffff", textDecoration: "none", fontSize: "20px" }}>
+                                    <div className='d-flex justify-content-between align-items-top' style={{ width: "55%" }}>
+                                        <div> <i className="bi bi-telephone-fill"></i></div>
+                                        <div style={{fontSize:"16px"}}>+91 7020906388</div>
+                                    </div>
+
+
+                                </Link>
+                            </div>
+
+                            <div className='my-4' style={{ fontSize: "20px" }}>
+                                <div className='d-flex justify-content-between align-items-top' style={{ width: "80%" }}>
+                                    <div><i className="bi bi-geo-alt-fill" style={{fontSize:"28px"}}></i></div>
+                                    <div><p style={{marginBottom:"0px", fontSize:"16px"}} className=''>D - 201, Samarth Carina,</p><p style={{marginBottom:"0px", fontSize:"16px"}} className=''>Near Aditya Birla Hospital,</p> <p style={{marginBottom:"0px", fontSize:"16px"}} className=''>Thergaon-Chinchwad Rd.,</p> <p style={{marginBottom:"0px", fontSize:"16px"}} className=''>Pune - MH - 411033</p></div>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-4 col-12 d-flex justify-content-center">
                         <div>
                             <h2>Join the Pro Team of Dzign Story!</h2>
 
-                            <div style={{ position: "relative", width: "75%" }} className="my-4">
+                            <div style={{ position: "relative", width: "75%", marginTop:"10%", marginBottom:"10%" }}>
                                 <input
                                     type="text"
                                     placeholder='Your Email'
@@ -64,7 +92,7 @@ export default function Footer() {
                                 />
                                 <button
 
-                                className='footerButton'
+                                    className='footerButton'
                                     style={{
                                         position: "absolute",
                                         right: "0px",
@@ -85,7 +113,7 @@ export default function Footer() {
                                     <h2><i className="bi bi-chevron-right" style={{ fontSize: "20px" }}></i></h2>
                                 </button>
                             </div>
-                            <div className='my-4' style={{ fontSize: "20px" }}>Or drop an email with your details & requirements to <Link href="mailto:info@dzignstory.com" style={{ color: "#ffffff", textDecoration: "none" }}>info@dzignstory.com</Link> </div>
+                            <div className='my-4' style={{ fontSize: "16px" }}>Or drop an email with your details & requirements to <Link href="mailto:info@dzignstory.com" style={{ color: "#ffffff", textDecoration: "none" }}>info@dzignstory.com</Link> </div>
                         </div>
                     </div>
                 </div>
