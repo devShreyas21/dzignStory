@@ -5,8 +5,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import Link from "next/link";
 import Navbar from "./Component/Navbar";
 
-import Image from "next/image";
-
 export default function Page() {
 
   const images = [
@@ -112,7 +110,7 @@ export default function Page() {
                       presence across platforms
                     </p>
                   </div>
-                  <img src="/images/photo-2.jpeg" alt="Packaging" className="img-fluid" style={{ width: '200px' }} />
+                  <img src="/images/social.jpg" alt="Packaging" className="img-fluid" style={{ width: '200px' }} />
                 </div>
               </div>
 
@@ -183,7 +181,7 @@ export default function Page() {
 
               <div className="col-12 d-flex justify-content-center align-items-center mt-4">
                 <div className="card border-0" style={{ width: "18rem" }}>
-                  <img src="/images/photo-2.jpeg" className="card-img-top" alt="..." />
+                  <img src="/images/social.jpg" className="card-img-top" alt="..." />
                   <div className="card-body">
                     <h5 className="card-title subHeading">Social media & Strategies</h5>
                     <p className="card-text subHeading">Helping you build strong presence across platforms</p>
@@ -470,7 +468,7 @@ export default function Page() {
           <div className="container">
             <div className="row my-5">
               <div className="col-md-6 col-12 my-2">
-                <div className="card" style={{ backgroundColor: "#FFFFFF", padding: "5%", border: "none" }}>
+                <div className="card" style={{ backgroundColor: "#FFFFFF", padding: "5%", border: "none",height:"425px" }}>
                   <div className="subHeading">We have been working with Dzign Story for the past nine years for all our corporate branding and advertising needs. It has been an exceptional experience with this agency.
 
                     Their unique ability to transform innovative ideas into well-crafted designs, coupled with their impressive on-time project deliveries, truly sets them apart. If you are looking for a highly efficient and expert team to handle your organization&apos;s advertising needs, your search ends here.
@@ -492,7 +490,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="col-md-6 col-12 my-2">
-                <div className="card" style={{ backgroundColor: "#FFFFFF", padding: "5%", border: "none" }}>
+                <div className="card" style={{ backgroundColor: "#FFFFFF", padding: "5%", border: "none", height:"425px" }}>
                   <div className="subHeading">Very professional and high-quality work! We have been associated with Dzign Story for the past four years for our institutional in-house magazine, and they have consistently met and exceeded our expectations.
 
                     Their creativity, attention to detail, and commitment to delivering exceptional designs make them a standout agency. The team is highly responsive, ensuring that all our requirements are fulfilled seamlessly.

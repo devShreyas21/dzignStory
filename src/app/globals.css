@@ -112,8 +112,30 @@ a {
   align-items: center;
   padding-inline: 15%;
 }
+.eightForPc{
+  width: 80% !important;
+}
+
+.checkbox{
+  width: 2.5% !important;
+}
+
+.contactBtn{
+  width: 30% !important
+}
 
 @media only screen and (max-width: 600px) {
+
+  .contactBtn{
+    width: 50% !important
+  }
+
+  .checkbox{
+    width: 7% !important;
+  }
+  .eightForPc{
+    width: 90% !important;
+  }
   .socialIcons {
     width: 100%;
     display: flex;

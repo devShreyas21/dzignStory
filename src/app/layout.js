@@ -37,6 +37,11 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+      <title>Branding Solutions</title>
+        <link rel="icon" href="/favicon.png" sizes="any" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
       {pathname !== "/" && <Navbar />}
         {children}

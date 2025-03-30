@@ -96,7 +96,7 @@ export default function Page() {
                     zIndex: 9999
                 }}>
                     {/* Replace this with your logo */}
-                    <img src="/images/dzign-story-logo.png" alt="Loading" style={{ width: '100px', height: '100px', animation: 'spin 2s linear infinite' }} />
+                    <img src="/favicon.png" alt="Loading" style={{ width: '100px', height: '100px', animation: 'spin 2s linear infinite' }} />
                 </div>
             )}
 
@@ -138,7 +138,8 @@ export default function Page() {
                                     <div key={service.id} style={{ display: "flex", justifyContent: "start" }} className="my-2">
                                         <input
                                             type="checkbox"
-                                            style={{ backgroundColor: "#D9D9D9", border: "none", width: "2.5%", marginRight: "1%" }}
+                                            className='checkbox'
+                                            style={{ backgroundColor: "#D9D9D9", border: "none", marginRight: "1%" }}
                                             onChange={() => handleCheckboxChange(`${service.name} projects is ${service.price}`)}
                                         />
                                         <label className="inputLabel">{service.name}</label>
@@ -168,7 +169,7 @@ export default function Page() {
                                     {statusMessage}
                                 </div>
                             )}
-                            <button style={{ backgroundColor: "#FED112", border: "none", width: "30%", padding: "1.5%", borderRadius: "5px", marginLeft: "1.5%" }} className='mt-5 subHeading' onClick={handleSubmit}>Eager to connect</button>
+                            <button style={{ backgroundColor: "#FED112", border: "none", padding: "1.5%", borderRadius: "5px", marginLeft: "1.5%" }} className='mt-5 subHeading contactBtn' onClick={handleSubmit}>Eager to connect</button>
 
                         </div>
                     </div>
