@@ -60,7 +60,7 @@ export default function Page() {
                 <img src="images/thumbnail/Aromaft.png" style={{ width: "100%" }} alt="" />
                 <div className='container ' style={{ display: "flex", justifyContent: "space-between", alignItems: "top", marginTop: "-18%" }}>
                   <div className='ms-2'>
-                    <p style={{ color: "#ffffff" }}>Brand Identity Design <br />Location - Baner, Pune</p>
+                    <p style={{ color: "#ffffff" }}>Package Design <br />Location - Bagnlore</p>
                   </div>
                   <div className='text-center ' style={{ marginRight: "25%", marginTop: "1%" }}>
                     <button style={{ paddingInline: "80%", paddingTop: "15%", paddingBottom: "15%", background: "none", border: "1px solid #ffffff", color: "#ffffff" }} onClick={() => { router.push('/Cashew') }}>Explore</button>
@@ -76,7 +76,7 @@ export default function Page() {
                 <img src="images/thumbnail/Groza.png" style={{ width: "100%" }} alt="" />
                 <div className='container ' style={{ display: "flex", justifyContent: "space-between", alignItems: "top", marginTop: "-18%" }}>
                   <div className='ms-2'>
-                    <p style={{ color: "#ffffff" }}>Brand Identity Design <br />Location - Baner, Pune</p>
+                    <p style={{ color: "#ffffff" }}>Package Design <br />Location - Mumbai</p>
                   </div>
                   <div className='text-center ' style={{ marginRight: "25%", marginTop: "1%" }}>
                     <button style={{ paddingInline: "80%", paddingTop: "15%", paddingBottom: "15%", background: "none", border: "1px solid #ffffff", color: "#ffffff" }} onClick={() => { router.push('/Groza') }}>Explore</button>
@@ -92,7 +92,7 @@ export default function Page() {
                 <img src="images/thumbnail/gummies.png" style={{ width: "100%" }} alt="" />
                 <div className='container ' style={{ display: "flex", justifyContent: "space-between", alignItems: "top", marginTop: "-18%" }}>
                   <div className='ms-2'>
-                    <p style={{ color: "#ffffff" }}>Brand Identity Design <br />Location - Baner, Pune</p>
+                    <p style={{ color: "#ffffff" }}>Package Design <br />Location - Pune</p>
                   </div>
                   <div className='text-center ' style={{ marginRight: "25%", marginTop: "1%" }}>
                     <button style={{ paddingInline: "80%", paddingTop: "15%", paddingBottom: "15%", background: "none", border: "1px solid #ffffff", color: "#ffffff" }} onClick={() => { router.push('/Gummies') }}>Explore</button>
@@ -108,7 +108,7 @@ export default function Page() {
                 <img src="images/thumbnail/mulyam.png" style={{ width: "100%" }} alt="" />
                 <div className='container ' style={{ display: "flex", justifyContent: "space-between", alignItems: "top", marginTop: "-18%" }}>
                   <div className='ms-2'>
-                    <p style={{ color: "#ffffff" }}>Brand Identity Design <br />Location - Baner, Pune</p>
+                    <p style={{ color: "#ffffff" }}>Package Design <br />Location - Pune</p>
                   </div>
                   <div className='text-center ' style={{ marginRight: "25%", marginTop: "1%" }}>
                     <button style={{ paddingInline: "80%", paddingTop: "15%", paddingBottom: "15%", background: "none", border: "1px solid #ffffff", color: "#ffffff" }} onClick={() => { router.push('/Mulyam') }}>Explore</button>
@@ -124,7 +124,7 @@ export default function Page() {
                 <img src="images/thumbnail/skyra.png" style={{ width: "100%" }} alt="" />
                 <div className='container ' style={{ display: "flex", justifyContent: "space-between", alignItems: "top", marginTop: "-18%" }}>
                   <div className='ms-2'>
-                    <p style={{ color: "#ffffff" }}>Brand Identity Design <br />Location - Baner, Pune</p>
+                    <p style={{ color: "#ffffff" }}>Brochure Design <br />Location - Pune</p>
                   </div>
                   <div className='text-center ' style={{ marginRight: "25%", marginTop: "1%" }}>
                     <button style={{ paddingInline: "80%", paddingTop: "15%", paddingBottom: "15%", background: "none", border: "1px solid #ffffff", color: "#ffffff" }} onClick={() => { router.push('/Skyra') }}>Explore</button>
@@ -140,7 +140,7 @@ export default function Page() {
                 <img src="images/thumbnail/junglecat.png" style={{ width: "100%" }} alt="" />
                 <div className='container ' style={{ display: "flex", justifyContent: "space-between", alignItems: "top", marginTop: "-18%" }}>
                   <div className='ms-2'>
-                    <p style={{ color: "#ffffff" }}>Brand Identity Design <br />Location - Baner, Pune</p>
+                    <p style={{ color: "#ffffff" }}>Package Design <br />Location - Pune</p>
                   </div>
                   <div className='text-center ' style={{ marginRight: "25%", marginTop: "1%" }}>
                     <button style={{ paddingInline: "80%", paddingTop: "15%", paddingBottom: "15%", background: "none", border: "1px solid #ffffff", color: "#ffffff" }} onClick={() => { router.push('/JungleCat') }}>Explore</button>
@@ -156,7 +156,7 @@ export default function Page() {
                 <img src="images/thumbnail/FISHONDISH.png" style={{ width: "100%" }} alt="" />
                 <div className='container ' style={{ display: "flex", justifyContent: "space-between", alignItems: "top", marginTop: "-18%" }}>
                   <div className='ms-2'>
-                    <p style={{ color: "#ffffff" }}>Brand Identity Design <br />Location - Baner, Pune</p>
+                    <p style={{ color: "#ffffff" }}>Fish on Dish <br />Location - Wakad, Pune</p>
                   </div>
                   <div className='text-center ' style={{ marginRight: "25%", marginTop: "1%" }}>
                     <button style={{ paddingInline: "80%", paddingTop: "15%", paddingBottom: "15%", background: "none", border: "1px solid #ffffff", color: "#ffffff" }} onClick={() => { router.push('/Fish') }}>Explore</button>
@@ -165,7 +165,6 @@ export default function Page() {
               </div>
             </Link>
           </div>
-
 
         </div>
 
