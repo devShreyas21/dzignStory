@@ -28,7 +28,7 @@ export default function Page() {
                 <img src="images/thumbnail/Mirai.png" style={{ width: "100%" }} alt="" />
                 <div className='container ' style={{ display: "flex", justifyContent: "space-between", alignItems: "top", marginTop: "-18%" }}>
                   <div className='ms-2'>
-                    <p style={{ color: "#ffffff" }}>Brand Identity Design <br />Location - Baner, Pune</p>
+                    <p style={{ color: "#ffffff" }}>Brand Identity Design <br />Location - Uganda</p>
                   </div>
                   <div className='text-center ' style={{ marginRight: "25%", marginTop: "1%" }}>
                     <button style={{ paddingInline: "80%", paddingTop: "15%", paddingBottom: "15%", background: "none", border: "1px solid #ffffff", color: "#ffffff" }} onClick={() => { router.push('/Mirai') }}>Explore</button>
@@ -60,7 +60,7 @@ export default function Page() {
                 <img src="images/thumbnail/Aromaft.png" style={{ width: "100%" }} alt="" />
                 <div className='container ' style={{ display: "flex", justifyContent: "space-between", alignItems: "top", marginTop: "-18%" }}>
                   <div className='ms-2'>
-                    <p style={{ color: "#ffffff" }}>Package Design <br />Location - Bagnlore</p>
+                    <p style={{ color: "#ffffff" }}>Package Design <br />Location - Banglore</p>
                   </div>
                   <div className='text-center ' style={{ marginRight: "25%", marginTop: "1%" }}>
                     <button style={{ paddingInline: "80%", paddingTop: "15%", paddingBottom: "15%", background: "none", border: "1px solid #ffffff", color: "#ffffff" }} onClick={() => { router.push('/Cashew') }}>Explore</button>
