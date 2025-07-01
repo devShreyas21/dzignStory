@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function page() {
   return (
     <div className='container'>
-      <img src="/images/fullpages/Skyra.jpg" style={{ width: "100%" }} alt="" />
+      <img src="/images/fullpages/skyra.jpg" style={{ width: "100%" }} alt="" />
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <Link href="/Gummies" style={{ textDecoration: "none", color: "#424C61" }}>
           <div>
